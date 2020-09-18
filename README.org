@@ -1,0 +1,23 @@
+* Upgrading
+
+#+begin_src sh
+  NIX_PATH="nixpkgs=./nixpkgs" ./upgrade.sh nixos-20.03 > nixpkgs.nix
+
+  NIX_PATH="nixpkgs=./nixpkgs" ./upgrade-unstable.sh > nixpkgs-unstable.nix
+#+end_src
+
+Then sync.
+
+* Syncing
+
+#+begin_src sh
+  ./sync.sh
+
+  ./sync-unstable.sh
+#+end_src
+
+* =git-repos=
+
+#+begin_src sh :noeval
+  git clone --depth=1 --branch nixos-unstable https://github.com/NixOS/nixpkgs.git
+#+end_src
