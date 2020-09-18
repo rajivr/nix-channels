@@ -1,7 +1,7 @@
 let
   nixpkgs-unstable = fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/b50ef9afa11b384c72f7123ca4760ebc6d199fe8.tar.gz";
-    sha256 = "0b6xjysxydiax765sia3dpnc3xi648aq4zjlxpiqzsh3hpsq0ch8";
+    url = "https://github.com/NixOS/nixpkgs/archive/441a7da8080352881bb52f85e910d8855e83fc55.tar.gz";
+    sha256 = "0093drxn7blw4hay41zbqzz1vhldil5sa5p0mwaqy5dn08yn4y3q";
   };
   pkgs = import nixpkgs-unstable {};
 in
